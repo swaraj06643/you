@@ -1,0 +1,68 @@
+<html>
+<head>
+    <meta charset="utf-8">
+</head>
+
+<body id="bgc">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>A small letter</title>
+    <meta name="language" content="en-US">
+    <meta name="title" content="A Love Letter | Aoudumber Bade">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/js.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+    <div class="mb-box">
+        <div class="bb">
+            <h2> Ek Pyara sa patrika!</h2>
+            <div class="bb_text">
+                <div id="code">
+                    Dear Samikshya! some people say loving someone can make  lose our lives, but i dont agree with this .
+                    I know you have a person who fulfill all those things;but it might be a mirage of myself .
+                    I also dont know how you will fill after reading this;  
+                    
+                   
+                    If one day you find the person who truly has your heart, I'll climb any cliff to pick the flower you desire!  
+                     
+                    Waking up n go to the college with a smile on my face cuz i know , you are in that college ,and i look towards u in a constant way;that makes me happy though;
+                    Even the college is the worst one but if the college has you then it becomes a wet lawn to me where i wanna play.
+                    But at last ek baat kahunga hindi m "Apme woh baat toh h jiss baat kisipe nahi h" And Its a fact .
+                </div>
+            </div>
+            <p class="bb_myname">
+                - Yours Swaraj <br>
+            </p>
+        </div>
+    </div>
+
+    <audio id="media" src="/kitna kuch kehna.mp3" autoplay loop preload="auto"></audio>
+
+    <script>
+        Element.prototype.typewriter = function () {
+            var element = this,
+                content = element.innerHTML,
+                index = 0;
+            element.innerHTML = "";
+            var timer = setInterval(function () {
+                var currentChar = content.substr(index, 1);
+                if (currentChar === "<") {
+                    index = content.indexOf(">", index) + 1;
+                } else {
+                    index++;
+                }
+                element.innerHTML = content.substring(0, index) + (index & 1 ? "_" : "");
+                if (index >= content.length) {
+                    clearInterval(timer);
+                }
+            }, 150);
+            return this;
+        };
+        document.getElementById("code").typewriter();
+    </script>
+  
+    <script type="text/javascript" src="js/count.js"></script>
+    <script type="text/javascript" async="" src="js/su.js"></script>
+
+</body>
+</html>
